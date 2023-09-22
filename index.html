@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basketball</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="badan-utama">
+		<header>
+			<h2>Society Basketball</h2>
+			<p>Basketball club to everyone</p>
+		</header>
+
+		<nav class="navigasi">
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a class="active" href="index.html">Home</a>
+				<a href="news.html">News</a>
+				<a href="schedule.html">Schedule</a>
+				<a href="contact.html">Contact us</a>
+				<a href="coaching.html">Coaching Guide</a>
+				
+			</div>
+			<div id="main">
+				<ul>
+				<li>
+					<a><button class="navigasi" onclick="openNav()">&#9776;</button></a>
+					<a class="active" href="index.html">Home</a>
+					<a href="news.html">News</a>
+					<a href="schedule.html">Schedule</a>
+					<a href="contact.html">Contact us</a>
+				</li>
+			</ul>
+			</div>
+			<script>
+				function openNav() {
+ 				document.getElementById("mySidebar").style.width = "250px";
+  				document.getElementById("main").style.marginLeft = "250px";
+				}
+				function closeNav() {
+  				document.getElementById("mySidebar").style.width = "0";
+  				document.getElementById("main").style.marginLeft= "0";
+				}
+			</script>
+		</nav>
+
+		<div class="banner">
+			<img class="mySlides" src="gambar/1.jpg" alt="image1">
+			<img class="mySlides" src="gambar/2.jpg" alt="image2">
+			<img class="mySlides" src="gambar/3.jpg" alt="image3">
+			<img class="mySlides" src="gambar/4.jpg" alt="image4">
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+			function carousel() {
+				var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				for (i = 0; i < x.length; i++) {
+ 				x[i].style.display = "none";  
+				}
+  				myIndex++;
+  				if (myIndex > x.length) {myIndex = 1}    
+  				x[myIndex-1].style.display = "block";  
+  				setTimeout(carousel, 3000);    
+				}
+		</script>
+
+		<div class="menu-kiri">
+			<div class="kotak">
+				<h3>Registration</h3>
+				<p>
+					Please follow the registration instructions by clicking the button below
+				</p>
+				<a class="tombol tombol-regis" href="contact.html">View</a>
+			</div>
+		</div>
+
+		<div class="menu-tengah">
+			<div class="kotak">
+				<h3>NBA</h3>
+				<span class="tanggal-posting">
+					Posted on 17.30 WIB, 08 April 2020
+				</span>
+
+				<img src="gambar/Remy_Martin.jpg" alt="Remy_Martin">
+				<p align="justify">
+					&emsp;Remy Martin mendeklarasikan diri untuk mengikuti NBA Draft 2020. Garda keturunan Filipina-Amerika Serikat itu berusaha mengejar mimpinya menjadi pemain pro. Ia mengumumkan deklarasinya via Instagram.
+					Martin merupakan garda Arizona State University (ASU). Ia sudah bermain di sana selama tiga tahun. Martin kini bersiap untuk meninggalkan kampus.
+				</p>
+				<a class="tombol tombol-lengkap" href="news.html">View More</a>
+			</div>
+			<div class="kotak">
+				<h3>DBL</h3>
+				<span class="tanggal-posting">
+					03 April 2020
+				</span>
+
+				<img src="gambar/dbl.jpg" alt="dbl">
+				<p align="justify">
+					&emsp;Sebagian orang hanya bisa bermimpi menjadi pemain pro. Sebagian lainnya berusaha mewujudkannya. Begitulah dunia, ada banyak ragam jalan pikir manusia. Aimee Tampu Francienne, siswi SMAN 4 Yogyakarta (Patbhe), boleh jadi yang kedua. Ia tidak ingin bermimpi saja. Namun, meniti arahnya sendiri untuk menjadi seorang pro. Ia melakukannya.
+				</p>
+				<a class="tombol tombol-lengkap" href="news.html">View More</a>
+			</div>
+		</div>
+
+		<div class="menu-kanan">
+			<div class="kotak">
+				<h3>Training Schedule</h3>
+				<img src="gambar/jadwal.png" alt="jadwal">
+				<h4 align="center">Training Schedule</h4>
+				<center>
+					<p>Monday 13.30 - 17.30</p>
+					<p>Tuesday 13.30 - 17.30</p>
+					<p>Wednesday 16.00 - 18.00</p>
+					<a href="schedule.html">View more</a>
+				</center>
+			</div>
+
+			<div class="kotak">
+				<h3>News</h3>
+				<nav class="menu-artikel">
+					<ul>
+						<li>
+							<a href="https://www.mainbasket.com/r/7841/piala-srikandi-livestreaming-dan-perkembangannya" target="_blank">Piala Srikandi</a>
+							<a href="https://www.liputan6.com/bola/read/4197732/virus-corona-juga-ganggu-gelaran-ibl" target="_blank">Virus Corona Juga Ganggu Gelaran IBL</a>
+							<a href="https://www.dbl.id/r/4726/menuju-musim-baru-sma-hangtuah-2-sidoarjo-rombak-komposisi-pemain" target="_blank">Menuju Musim Baru: SMA Hangtuah 2 Sidoarjo Rombak Komposisi Pemain</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<footer>
+			@copyright 2020 || by Ulyana Alfiani
+		</footer>
+
+	</div>
+</body>
+</html>

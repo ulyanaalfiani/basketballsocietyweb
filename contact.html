@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basketball</title>
+	<link rel="stylesheet" type="text/css" href="contactstyle.css">
+</head>
+<body>
+	<div class="badan-utama">
+		<header>
+			<h2>Society Basketball</h2>
+			<p>Basketball club to everyone</p>
+		</header>
+
+		<nav class="navigasi">
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a class="active" href="index.html">Home</a>
+				<a href="news.html">News</a>
+				<a href="schedule.html">Schedule</a>
+				<a href="contact.html">Contact us</a>
+				<a href="coaching.html">Coaching Guide</a>
+			</div>
+			<div id="main">
+				<ul>
+				<li>
+					<a><button class="navigasi" onclick="openNav()">&#9776;</button></a>
+					<a class="active" href="index.html">Home</a>
+					<a href="news.html">News</a>
+					<a href="schedule.html">Schedule</a>
+					<a href="contact.html">Contact us</a>
+				</li>
+			</ul>
+			</div>
+			<script>
+				function openNav() {
+ 				document.getElementById("mySidebar").style.width = "250px";
+  				document.getElementById("main").style.marginLeft = "250px";
+				}
+				function closeNav() {
+  				document.getElementById("mySidebar").style.width = "0";
+  				document.getElementById("main").style.marginLeft= "0";
+				}
+			</script>
+		</nav>
+
+		<div class="banner">
+			<img class="mySlides" src="gambar/1.jpg" alt="image1">
+			<img class="mySlides" src="gambar/2.jpg" alt="image2">
+			<img class="mySlides" src="gambar/3.jpg" alt="image3">
+			<img class="mySlides" src="gambar/4.jpg" alt="image4">
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+			function carousel() {
+				var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				for (i = 0; i < x.length; i++) {
+ 				x[i].style.display = "none";  
+				}
+  				myIndex++;
+  				if (myIndex > x.length) {myIndex = 1}    
+  				x[myIndex-1].style.display = "block";  
+  				setTimeout(carousel, 3000);    
+				}
+		</script>
+
+		<div class="menu-tengah">
+			<div class="kotak">
+				<h3>About Us</h3>
+				 <div class="container">
+  				<img src="gambar/about.jpg" alt="Notebook" style="width:100%;">
+  				<div class="content">
+    			<h1>Join With us</h1>
+    			<p>Lets have fun with our team</p>
+  				</div>
+				</div> 
+				<br>
+				<p><center><b>Follow our Social Media below to get more information</b>
+					<br>
+					<a class="btn" href="https://www.instagram.com/" target="_blank"><img src="gambar/instagram.png" alt="instagram">@Society_basketball</a>
+					<br>
+					<a class="btn" href="https://www.facebook.com/" target="_blank"><img src="gambar/fb.jpg">Society_basketball</i></a>
+					<br>
+					<a class="btn" href="https://www.gmail.com/" target="_blank"><img src="gambar/gmail.png">societybasketball@gmail.com</i></a>
+					<br>
+					<a class="btn" href="https://www.youtube.com/" target="_blank"><img src="gambar/youtube.jpg">SociatyBasketball</i></a></center></p>
+			</div>
+		</div>
+		
+		<footer>
+			@copyright 2020 || by Ulyana Alfiani
+		</footer>
+
+	</div>
+</body>
+</html>
